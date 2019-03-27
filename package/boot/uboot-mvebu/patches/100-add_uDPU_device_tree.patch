@@ -208,7 +208,7 @@
 +	spi-flash@0 {
 +		#address-cells = <1>;
 +		#size-cells = <1>;
-+		compatible = "n25q1024a","n25q512a";
++		compatible = "macronix,mx25u12835f";
 +		reg = <0>; /* Chip select 0 */
 +		spi-max-frequency = <50000000>;
 +		spi-rx-bus-width = <4>;
