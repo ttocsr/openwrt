@@ -530,6 +530,9 @@ ar71xx_board_detect() {
 		name="bullet-m"
 		ubnt_xm_board_detect
 		;;
+	*"Bullet M XW")
+		name="bullet-m-xw"
+		;;
 	*"BXU2000n-2 rev. A1")
 		name="bxu2000n-2-a1"
 		;;
@@ -584,6 +587,10 @@ ar71xx_board_detect() {
 		;;
 	*"CPE210 v2")
 		name="cpe210-v2"
+		tplink_pharos_board_detect "$(tplink_pharos_v2_get_model_string)"
+		;;
+	*"CPE210 v3")
+		name="cpe210-v3"
 		tplink_pharos_board_detect "$(tplink_pharos_v2_get_model_string)"
 		;;
 	*"CPE505N")
